@@ -364,7 +364,7 @@
           <div class="container">
             <div class="section__title">Закажите доставку</div>
             <div class="order__form">
-              <form class="order__form-tag" id="order-form">
+              <form class="order__form-tag" id="order-form" method="post">
                 <div class="order__form-col">
                   <div class="order__form-row order__form-row_double">
                     <label class="order__form-block">
@@ -433,7 +433,7 @@
                       </label>
                     </div>
                     <div class="order__form-row">
-                      <input class="order__form-button" name="" type="submit" value="Заказать">
+                      <input class="order__form-button" name="" type="submit" value="Заказать" id="order">
                       <input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
                     </div>
                   </div>
@@ -498,8 +498,10 @@
         <div class="status-popup__message error-message">Произошла ошибка</div><a class="status-popup__close btn" href="#">Закрыть</a>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/vendors.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="./js/main.min.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
